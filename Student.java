@@ -1,18 +1,22 @@
 public class Student {
-    String Name;
+    String studentName;
     boolean logStatus;
 
-    public Student (String Name){
-        this.name = Name;
+    public Student (String studentName, boolean logStatus){
+        this.studentName = studentName;
         this.logStatus = logStatus;
     }
 
     public void login (){
-        loggedIn = true;
-        System.out.println(Name + " logged in.");
+        logStatus = true;
+        System.out.println(studentName + " logged in.");
     }
 
     public String getName(){
-        return Name;
+        return studentName;
+    }
+
+    public boolean isLogStatus() {
+        return logStatus;
     }
 }

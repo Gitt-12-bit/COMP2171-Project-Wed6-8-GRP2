@@ -3,7 +3,7 @@ public class BookingSystem {
     public static void bookSession(Student student, Session session) {
 
         // Check conflicts
-        if (!student.loggedIn) {
+        if (!student.logStatus) {
             System.out.println("Error: Student must log in first.");
             return;
         }

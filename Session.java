@@ -21,4 +21,9 @@ public class Session {
     public String getTimeSlot() {
         return timeSlot;
     }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
 }
